@@ -1,0 +1,8 @@
+@keyframes main-content-animation {
+  from {
+    border: white 8px solid;
+  }
+  to {
+    border: #4da8da 8px solid;
+  }
+}
