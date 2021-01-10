@@ -21,6 +21,13 @@ html {
   background-color: #eefbfb;
 }
 
+.top-deck-central {
+  grid-row: 2;
+  grid-column: 2;
+  font-family: Georgia;
+  text-align: center;
+}
+
 .menu-bars {
   grid-row: 3;
   grid-column: 1;
@@ -53,11 +60,12 @@ html {
   animation-duration: 7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  font-family: cursive;
 }
 
 #phone-number {
   display: none;
-  font-family: calibiri;
+
   color: white;
   text-align: center;
   text-justify: center;
@@ -68,7 +76,6 @@ html {
   display: none;
   grid-row: 1;
   grid-column: 3;
-  font-family: calibiri;
   color: white;
   text-align: center;
   align-self: center;
@@ -79,7 +86,6 @@ html {
   display: none;
   grid-row: 2;
   grid-column: 2;
-  font-family: calibiri;
   color: white;
   text-align: center;
   align-self: center;
