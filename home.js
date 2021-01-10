@@ -10,6 +10,14 @@ function togglemenu(){
     }
 }
 
+function showContent(classname){
+    var elements = document.getElementsByClassName(classname);
+
+    console.log(elements[0])
+    for(let j=0; j<=elements.length; j++){
+        typeWriter(elements[j].id)
+    }
+}
 
 function typeWriter(id){
     var i = 0;
@@ -30,6 +38,38 @@ function typeWriter(id){
     }
 }
 
+function typeWriter1(classname){
+    var elements = document.getElementsByClassName(classname);
+    console.log(elements[0])
+    var length = elements.length;
+    var element;
+    for(let j=0; j<=length; j++){
+        element = elements[j];
+        var txt = element.innerHTML;
+        console.log(txt);
+        element.innerHTML = '';
+        element.style.display = 'block'
+        var speed = 70;
+        let i = 0;
+        type(j, i, speed, txt, element);    
+    }
+}
+    
+function type(j, i, speed, txt, element){
+        console.log(txt.length)
+        console.log(j)
+        if(i < txt.length){
+        console.log(i);
+        element.innerHTML += txt.charAt(i);
+        console.log(element.innerHTML)
+        i++
+        setTimeout(() => type, speed);  
+        }
+    }   
+
+    
+
+
 function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
@@ -37,3 +77,5 @@ function sleep(milliseconds) {
       currentDate = Date.now();
     } while (currentDate - date < milliseconds);
   }
+
+  
