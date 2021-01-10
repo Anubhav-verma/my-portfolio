@@ -48,12 +48,20 @@ html {
   animation-fill-mode: both;*/
 }
 
+.Introduction {
+  animation-name: change-block-color;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 #phone-number {
   display: none;
   font-family: calibiri;
   color: white;
   text-align: center;
-  align-self: center;
+  text-justify: center;
+  align-self: stretch;
 }
 
 #email {
@@ -64,6 +72,7 @@ html {
   color: white;
   text-align: center;
   align-self: center;
+  align-self: stretch;
 }
 
 #linkedin {
@@ -74,6 +83,7 @@ html {
   color: white;
   text-align: center;
   align-self: center;
+  align-self: stretch;
 }
 
 .bottom-deck {

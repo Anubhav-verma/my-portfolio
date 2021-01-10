@@ -6,3 +6,12 @@
     border: #4da8da 8px solid;
   }
 }
+
+@keyframes change-block-color {
+  from {
+    background-color: #203647;
+  }
+  to {
+    background-color: #007cc7;
+  }
+}
