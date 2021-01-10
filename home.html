@@ -10,23 +10,32 @@
 <body class="container">
     <div class="top-deck" >
         <div class="top-deck-central">Anubhav's portfolio</div>
-        <div class="menu-bars"  onclick="togglemenu()">&#9776;</div>
+        <div class="menu-bars" onclick="togglemenu()">&#9776;</div>
     </div>
     <div class="left-panel"><h4 style="text-align:center">Key Index</h4>
         <ul style="line-height:5; list-style-type:none;">
             <li><span onclick="showContent('Introduction')">Introduction</span></li>
-            <li><span>Summary</span></li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Education</li>
-            <li>Certifications</li>
-            <li>Skills</li>
+            <li><span onclick="showContent('Summary')">Summary</span></li>
+            <li><span onclick="showContent('Experience')">Experience</span></li>
+            <li><span onclick="showContent('Projects')">Projects</span></li>
+            <li><span onclick="showContent('Certifications')">Certifications</span></li>
+            <li><span onclick="showContent('Skills')">Skills</span></li>
         </ul>
     </div>  
     <div class="main-content">
-        <div class="Introduction" id="phone-number">Phone-Number: 7014648029</div>
-        <div class="Introduction" id="email">Email: ianubhavverma@gmail.com</div>
-        <div class="Introduction" id="linkedin">Linkedin: https://www.linkedin.com/in/anubhav-verma-88737b168/</div>
+        <div class="Main-animation Introduction" id="phone-number">Phone-Number: 7014648029</div>
+        <div class="Main-animation Introduction" id="email">Email: ianubhavverma@gmail.com</div>
+        <div class="Main-animation Introduction" id="linkedin">Linkedin: https://www.linkedin.com/in/anubhav-verma-88737b168/</div>
+        <div class="Main-animation Summary" id="summary">To be written...</div>  
+        <div class="Main-animation Experience" id="experience">1 Year of Working Experience as QA Engineer in E-connect</div>
+        <div class="Main-animation Projects" id="project1">RajERP</div>
+        <div class="Main-animation Projects" id="project2">RIICO</div>
+        <div class="Main-animation Projects" id="project3">BRDS</div>
+        <div class="Main-animation Certifications" id="certificate1">Object-Oriented Programming with Java, part I</div>
+        <div class="Main-animation Certifications" id="certificate2">Build IOT Things from scratch to Market</div>
+        <div class="Main-animation Skills" id="skill1">HTML, CSS, JavaScript</div>
+        <div class="Main-animation Skills" id="skill2">Java</div>
+        <div class="Main-animation Skills" id="skill3">Robot Framework</div>
     </div>
     <div class="bottom-deck"></div>
     <script src="home.js"></script>

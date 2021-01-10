@@ -1,7 +1,5 @@
 function togglemenu(){
     var togglevalue = document.getElementsByClassName("left-panel")[0];
-    console.log(togglevalue)
-    console.log(togglevalue.style.display)
     if(togglevalue.style.display == 'none'){
         togglevalue.style.display = ''
     }
@@ -12,8 +10,12 @@ function togglemenu(){
 
 function showContent(classname){
     var elements = document.getElementsByClassName(classname);
-
-    console.log(elements[0])
+    var all_elements = document.getElementsByClassName("Main-animation");
+    console.log(all_elements)
+    for(var i=0; i<all_elements.length;i++){
+        console.log(all_elements[i])
+        all_elements[i].style.display = 'none'
+    }
     for(let j=0; j<=elements.length; j++){
         typeWriter(elements[j].id)
     }
@@ -23,7 +25,6 @@ function typeWriter(id){
     var i = 0;
     var element = document.getElementById(id);
     var txt = element.innerHTML;
-    console.log(txt);
     element.innerHTML = '';
     element.style.display = 'block'
     var speed = 70;
@@ -31,14 +32,13 @@ function typeWriter(id){
     function type(){
         if(i < txt.length){
         element.innerHTML += txt.charAt(i);
-        console.log(element.innerHTML)
         i++
         setTimeout(type, speed);  
         }
     }
 }
 
-function typeWriter1(classname){
+/*function typeWriter1(classname){
     var elements = document.getElementsByClassName(classname);
     console.log(elements[0])
     var length = elements.length;
@@ -67,7 +67,7 @@ function type(j, i, speed, txt, element){
         }
     }   
 
-    
+ */   
 
 
 function sleep(milliseconds) {
